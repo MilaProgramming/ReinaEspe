@@ -1,4 +1,5 @@
-import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Galeria from "./pages/Galeria";
 import './App.css';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
@@ -8,7 +9,7 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route index element={<Home/>} />
+          <Route index element={<Galeria/>} />
         </Routes>    
       </Router>
     </div>
