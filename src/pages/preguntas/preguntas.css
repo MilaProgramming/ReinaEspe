@@ -1,0 +1,36 @@
+.encabezado{
+    background-color: #0d6315;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+   }
+   .logReina{
+     max-width: 150px;
+   }
+   .tituloPrincipal{
+     color: white;
+     font-family:cursive;
+     font-style:oblique;
+     text-align: center;
+     
+   }
+   .tituloSecundario{
+     color: red;
+     font-family:cursive;
+     font-style:oblique;
+     text-align: center;
+     font-style: italic;
+   }
+   
+   .Cuerpo{
+     text-align: center;
+     font-size: 20px;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     font-style: oblique;
+     border: 3px solid;
+     border-color: darkgoldenrod;
+     margin-left: 5px;
+   }
+   .Cuerpo table tr td img{
+    border-radius:150px;
+   }
