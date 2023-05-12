@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+body {
+  margin: 0;
+  font-family: "Roboto";
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  background-color: #007429;
+  width: 100%;
+  height: 110px;
+  color: white;
+  font-weight: lighter;
+  font-size:auto;
+}
+
+
+.App {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /*height: 100vh;
+  */background-color: white;
+}
+
+.container{
+    width:100%;
+  display:flex;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 70%;
+  display: flex;
+  align-self: center; 
+  flex-direction: column;
+  margin: 1.5% auto;
+  justify-content: center;
+}
+
+.inner {
+  white-space: nowrap;
+  transition: transform 0.3s;
+}
+
+.carousel-item {
+  display: inline-flex;
+  overflow: hidden;
+  border: 1px solid rgba(0,0, 0, 0.5);
+  border-radius: 25px;
+  box-shadow: 2px 2px 10px rgba(0,0, 0, 0.5);
+  align-items: center;
+  align-self:center;
+  justify-content: center;
+  height: 490px;
+  background-image: linear-gradient(
+        0deg,
+        rgba(47,156,97,0.6),
+        rgba(29, 190, 11, 0.6)
+    );
+  background-color: #fff;
+}
+
+.carousel-item-text {
+  width:50%;
+  font-size: 1.15rem;
+  margin: 3%;
+  padding: 0 20px 0 20px;
+  white-space: normal;
+  /*border: solid 2px #d0bf2d;*/
+}
+.carousel-img {
+  width: 50%;
+  padding: 0 2% 0 2%;
+}
+.carousel-img img{
+  width:90%;
+}
+
+/* final stage */
+
+.carousel-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button-arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.indicators {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1.5%;
+}
+
+.indicator-buttons {
+  border: none;
+  cursor: pointer;
+}
+
+.indicators > button {
+  margin: 5px;
+  background: none;
+}
+
+.indicator-symbol {
+  color: #26343f;
+}
+
+.indicator-symbol-active, .button-arrow span:hover{
+  color: #E29F31;
+  font-weight: bolder;
+}
+
+@media (max-width:780px){
+    .carousel-item{
+        flex-direction: column;
+    }
+}
