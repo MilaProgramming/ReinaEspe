@@ -2,7 +2,7 @@ import React from 'react'
 
 function Galeria() {
   return (
-    <div>Galeria</div>
+    <div>Holaxd</div>
   )
 }
 
