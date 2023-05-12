@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {CarouselItem} from "./CarouselItem"
-import "./styles/carousel.css"
+import "../styles/carrusel.css"
 
 export const Carousel=() => {
     const [activeIndex,setActiveIndex] = useState(0);
@@ -10,19 +10,19 @@ export const Carousel=() => {
             description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing Nam hendrerit nisl turpis, quis tempor urna tincidunt ut.",
             
-            icon: require("./Media/p1.svg"),
+            icon: require("../assets/p1.svg"),
         },
 
         {
             title:"None",
             description:"Lorem ipsum dolor sit amet, consectetur adipiscing Nam hendrerit nisl turpis, quis",
-            icon: require("./Media/p2.svg"),
+            icon: require("../assets/p2.svg"),
         },
 
         {
             title:"None",
             description:"Lorem ipsum dolor sit amet, consectetur adipiscing Nam hendrerit nisl turpis, quis",
-            icon: require("./Media/p3.svg"),
+            icon: require("../assets/p3.svg"),
         },
         
 
