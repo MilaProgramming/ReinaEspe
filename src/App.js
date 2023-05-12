@@ -3,6 +3,8 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import {Carousel} from "./pages/Carousel"
 import "./styles/carrusel.css"
+import Preguntas from "./pages/preguntas/Preguntas.js"
+
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Router>
         <Routes>
           <Route index element={<Carousel/>} />
+          <Route path='/ronda_preguntas' element={<Preguntas/>}/>
+          
         </Routes>    
       </Router>
     </div>
