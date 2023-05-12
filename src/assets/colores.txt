@@ -1,0 +1,5 @@
+base - blanco - #ffffff
+primario - fun green - #007429
+secundarios 
+ - sea green - #2f9c61
+ - fire bush - #E29f31
