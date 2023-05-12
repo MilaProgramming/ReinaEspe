@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import {Carousel} from "./pages/Carousel"
 import "./styles/carrusel.css"
+import Home from "./pages/Home";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Router>
         <Routes>
           <Route index element={<Carousel/>} />
+          <Route path="/home" element={<Home />} />
         </Routes>    
       </Router>
     </div>
