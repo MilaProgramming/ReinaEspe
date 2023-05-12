@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>Elección de la Reina</h1>
+        <h1>Elección del Rey</h1>
       </header>
       <Router>
         <Routes>
