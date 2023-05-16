@@ -1,10 +1,10 @@
-import Galeria from "./pages/Galeria";
 import './App.css';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import {Carousel} from "./pages/Carousel"
 import "./styles/carrusel.css"
 import Home from "./pages/Home";
 import Preguntas from "./pages/preguntas/Preguntas.js"
+import Traje from "./pages/Traje";
 
 
 function App() {
@@ -21,7 +21,8 @@ function App() {
 
           <Route path='/ronda_preguntas' element={<Preguntas/>}/>
           
-
+          <Route path='/traje' element={<Traje/>}/>
+          
         </Routes>    
       </Router>
     </div>
