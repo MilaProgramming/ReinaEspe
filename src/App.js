@@ -16,13 +16,9 @@ function App() {
       <Router>
         <Routes>
           <Route index element={<Carousel/>} />
-
           <Route path="/traje" element={<Traje />} />
-
-          <Route path="/barra" element={<Barra/>} />
-
           <Route path='/ronda_preguntas' element={<Preguntas/>}/>
-          
+          <Route path="/barra" element={<Barra/>} />
         </Routes>    
       </Router>
     </div>
