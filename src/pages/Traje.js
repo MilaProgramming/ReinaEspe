@@ -17,4 +17,4 @@ const Traje = () => (
   </div>
 );
 
-export default Traje;
+export default Traje
