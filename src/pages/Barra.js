@@ -1,7 +1,7 @@
 import React from 'react'
 const imagen = require.context("../img/");
 
-const Barras = () => (
+const Barra = () => (
   <div className="container_cont">
       <div className="borde">
           <h2>Etapa 3 Calificacion de Barras</h2>
@@ -16,4 +16,4 @@ const Barras = () => (
   </div>
 );
 
-export default Barras;
+export default Barra;
