@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import {Carousel} from "./pages/Carousel"
 import "./styles/carrusel.css"
 import Traje from "./pages/Traje";
+import Barra from "./pages/Barra";
 import Preguntas from "./pages/preguntas/Preguntas.js"
 
 
@@ -17,6 +18,8 @@ function App() {
           <Route index element={<Carousel/>} />
 
           <Route path="/traje" element={<Traje />} />
+
+          <Route path="/barra" element={<Barra/>} />
 
           <Route path='/ronda_preguntas' element={<Preguntas/>}/>
           
