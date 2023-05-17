@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+.calificacion-container {
+    display: flex;
+    padding-left: 90vh;
+    margin-top: -50vh;
+}
+
+.calificacion-button {
+    font-family: "Poppins";
+    font-size: x-large;
+    background-color: #ffffff;
+    color: #090909;
+    border: 2px solid #E29f31;
+    padding: 50px 100px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.calificacion-button:hover {
+    background-color: #e4c18a;
+}
