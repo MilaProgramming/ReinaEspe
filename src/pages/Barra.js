@@ -12,7 +12,6 @@ const Barra = () => (
                 <h2>Califique la barra del departamento</h2>
             </div>
         </div>
-
     </div>
 );
 
