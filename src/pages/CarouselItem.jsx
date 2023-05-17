@@ -6,10 +6,8 @@ export const CarouselItem=( {item}) => {
     <div className='carousel-item'>
         <div></div>
         <figure className='carousel-img'>
-          <img src={item.icon.default} />
+          <img src={item.ic} alt = "imagen"/>
         </figure>
-        <div className='carousel-item-text'>{item.description}</div>
-        <div></div>
     </div>
   );
 };
