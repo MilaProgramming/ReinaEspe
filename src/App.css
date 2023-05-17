@@ -214,3 +214,12 @@ font-size:auto;
   margin-top: 200px;
   margin-left: -600px;
 }
+
+.circleOrange {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 200px;
+  margin-left: -600px;
+}
