@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import {Carousel} from "./pages/Carousel"
 import "./styles/carrusel.css"
-import Home from "./pages/Home";
+import Home from "./pages/Traje";
 import Preguntas from "./pages/preguntas/Preguntas.js"
 import Traje from "./pages/Traje";
 
