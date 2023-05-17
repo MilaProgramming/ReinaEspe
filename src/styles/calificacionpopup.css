@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+.calificacion-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 600px;
+    height: 330px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    text-align: center;
+}
+
+.calificacion-popup h2 {
+    font-family: "Poppins";
+    margin-top: 0;
+}
+
+.calificacion-popup button {
+    font-family: "Poppins";
+    margin-top: 10px;
+    background-color: #ffffff;
+    color: #090909;
+    border: 2px solid #E29f31;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.calificacion-popup button:hover {
+background-color: #0056b3;
+}
+
+.botones-calificacion {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Dos filas con cinco columnas cada una */
+    gap: 20px 10px; /* Espacio entre los botones */
+    justify-items: center; /* Centrar horizontalmente los botones en cada celda */
+    margin-top: 20px;
+}
+
+.calificacion-popup .numeros  {
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 100%;
+    background: linear-gradient(92.24deg, #EC1F7E -19.37%, #EE3B24 123.21%);
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.numeros:hover {
+    transform: scale(1.2);
+}
+
+.calificacion-popup .numeros.selected {
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 100%;
+    background: linear-gradient(92.24deg, #007429 -19.37%, #2f9c61 123.21%);
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 10px;
+}
