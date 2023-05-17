@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 .App {
   text-align: center;
 }
@@ -11,21 +13,6 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -107,12 +94,13 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-background-color: #007429;
-width: 100%;
-height: 110px;
-color: white;
-font-weight: lighter;
-font-size:auto;
+  font-family: "Poppins";
+  background-color: #007429;
+  width: 100%;
+  height: 110px;
+  color: white;
+  font-weight: lighter;
+  font-size:auto;
 }
 
 .borde{
@@ -144,12 +132,10 @@ font-size:auto;
 }
 
 .container_cont{
-  
   max-width: 1200px;
   margin: auto;
   padding: 25px;
 }
-
 
 .reina {
   width: 200px;
@@ -169,4 +155,59 @@ font-size:auto;
 .boton{
   margin-top: -250px;
   margin-left: 300px;
+}
+
+.barras{
+  margin-top:45px;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: red;
+  font-family: 'Roboto', sans-serif;
+}
+
+.barras h2
+{
+  position: absolute;
+  top: 0;
+  margin-top: 110px;
+  padding: 10px;
+  font-size: 50px;
+}
+
+.barra h2
+{
+  margin-top:200px;
+  right: 700px;
+  color: #007429;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+}
+
+.barra {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -250px;
+  margin-left: -225px;
+}
+
+.circleGreen {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 200px;
+  margin-left: -600px;
+}
+
+.circleOrange {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 200px;
+  margin-left: -600px;
 }
