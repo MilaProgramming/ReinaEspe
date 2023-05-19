@@ -1,52 +1,28 @@
-import {
-  Routes,
-  Route,
-  useNavigationType,
-  useLocation,
-} from "react-router-dom";
-import FrmLogin from "./pages/FrmLogin";
-import { useEffect } from "react";
+import './App.css';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import {Carousel} from "./pages/Carousel"
+import "./styles/carrusel.css"
+import Traje from "./pages/Traje";
+import Barra from "./pages/Barra";
+import Preguntas from "./pages/preguntas/Preguntas.js"
+
 
 function App() {
-  const action = useNavigationType();
-  const location = useLocation();
-  const pathname = location.pathname;
-
-  useEffect(() => {
-    if (action !== "POP") {
-      window.scrollTo(0, 0);
-    }
-  }, [action, pathname]);
-
-  useEffect(() => {
-    let title = "";
-    let metaDescription = "";
-
-    switch (pathname) {
-      case "/":
-        title = "";
-        metaDescription = "";
-        break;
-    }
-
-    if (title) {
-      document.title = title;
-    }
-
-    if (metaDescription) {
-      const metaDescriptionTag = document.querySelector(
-        'head > meta[name="description"]'
-      );
-      if (metaDescriptionTag) {
-        metaDescriptionTag.content = metaDescription;
-      }
-    }
-  }, [pathname]);
-
   return (
-    <Routes>
-      <Route path="/" element={<FrmLogin />} />
-    </Routes>
+    <div className="App">
+      <header>
+        <h1>Elección de la Reina</h1>
+      </header>
+      <Router>
+        <Routes>
+          <Route index element={<Carousel/>} />
+          <Route path="/traje" element={<Traje />} />
+          <Route path='/ronda_preguntas' element={<Preguntas/>}/>
+          <Route path="/barra" element={<Barra/>} />
+        </Routes>    
+      </Router>
+    </div>
   );
 }
+
 export default App;
