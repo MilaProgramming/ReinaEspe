@@ -31,9 +31,63 @@
   text-decoration: none;
 }
 
+body{
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  background-size: cover;
+  font-family:sans-serif ;
+  height: 100%;
+  /*background-image: linear-gradient(to bottom, rgba(61, 14, 217, 0), rgba(18, 52, 220, 0.5)), url('../src/img/fondo4.jpg');*/
+}
+
+nav{
+  /*background-image: linear-gradient(to bottom, #fff, #007429, #E29f31);*/
+  background: #007429;
+  height: 100px;
+  width: 100%;
+}
+
+
+.container__header{
+  display: flex;
+}
+
+.titulo{
+  margin-top: 9px;
+  margin-left: 90px;
+}
+
+.titulo h1
+{
+  color: #fff;
+  font-size: 50px;
+  top: 25px;
+  left: 35%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo{
+  width: 80px;
+  margin-top: 5px;
+  margin-right: 1000px;
+}
+
+.logoEspe{
+  width: 80px;
+  margin-top: 5px;
+  margin-left: 50px;
+}
+
 h1 {
   font-size: 6vmin;
   position: absolute;
+}
+
+.container__all{
+  position: relative;
+  right: 0;
+  transition: all 300ms;
 }
 
 header{
@@ -48,3 +102,113 @@ header{
   font-weight: lighter;
   font-size:auto;
 }
+
+.borde{
+  margin-top:45px;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: red;
+  font-family: 'Roboto', sans-serif;
+}
+
+.borde h2
+{
+  position: absolute;
+  top: 0;
+  margin-top: 110px;
+  padding: 10px;
+  font-size: 50px;
+}
+
+.reina h2
+{
+  margin-top:600px;
+  right: 950px;
+  color: rgb(8, 2, 2);
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.container_cont{
+  max-width: 1200px;
+  margin: auto;
+  padding: 25px;
+}
+
+.reina {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -350px;
+  margin-left: -450px;
+}
+
+.circle-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.boton{
+  margin-top: -250px;
+  margin-left: 300px;
+}
+
+.barras{
+  margin-top:45px;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: red;
+  font-family: 'Roboto', sans-serif;
+}
+
+.barras h2
+{
+  position: absolute;
+  top: 0;
+  margin-top: 110px;
+  padding: 10px;
+  font-size: 50px;
+}
+
+.barra h2
+{
+  margin-top:200px;
+  right: 700px;
+  color: #007429;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+}
+
+.barra {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -250px;
+  margin-left: -225px;
+}
+
+.circleGreen {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 200px;
+  margin-left: -600px;
+}
+
+.circleOrange {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 200px;
+  margin-left: -600px;
+}
+
