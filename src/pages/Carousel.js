@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {CarouselItem} from "./CarouselItem"
+import {CarouselItem} from "./CarouselItem.js"
 import "../styles/carrusel.css"
 import reina1 from "../assets/reina1.jpg"
 import reina2 from "../assets/reina1_2.jpg"
