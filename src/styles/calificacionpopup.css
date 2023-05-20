@@ -24,19 +24,21 @@
 .botonAceptar{
     margin-top: 18px;
     padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .calificacion-popup button {
     font-family: "Poppins";
     background-color: #ffffff;
     color: #090909;
-    border: 2px solid #E29f31;
+    border: 2px solid #090909;
     border-radius: 4px;
     cursor: pointer;
 }
 
 .calificacion-popup button:hover {  
-background-color: #0056b3;
+background-color: #e4c18a;
 }
 
 .botones-calificacion {
