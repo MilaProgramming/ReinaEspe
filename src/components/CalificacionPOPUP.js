@@ -11,7 +11,7 @@ const CalificacionPopup = ({ onClose }) => {
     return (
         <div className="calificacion-popup">
             <h2>Seleccione la Puntuación</h2>
-            <div className="botones-calificacion">
+            <div className="botones-calificacionTraje">
                 {Array.from({ length: 10 }, (_, index) => (
                 <button 
                     key={index} 

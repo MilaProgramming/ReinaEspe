@@ -2,8 +2,6 @@
 
 .calificacion-container {
     display: flex;
-    margin-left: 100vh;
-    margin-top: -50vh;
 
     position: relative;
 	width: 303px;
