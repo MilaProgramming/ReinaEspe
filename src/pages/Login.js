@@ -10,7 +10,7 @@ function Login() {
             <img
               className="logoespereina-icon"
               alt=""
-              src="../assets/logoespereina.png"
+              src= {require("../assets/logoespereina.png")}
             />
           </div>
 
@@ -48,7 +48,7 @@ function Login() {
           <img
             className="siluetareina-icon"
             alt=""
-            src="../assets/siluetareina.png"
+            src= {require("../assets/siluetareina.png")}
           />
       </div>
     </div>
