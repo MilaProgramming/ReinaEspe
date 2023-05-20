@@ -175,23 +175,3 @@
   }
 
 
-  .calificacion-container {
-    display: flex;
-    padding-left: 70vh;
-    margin-top: -20vh;
-}
-
-.calificacion-button {
-    font-family: "Poppins";
-    font-size: x-large;
-    background-color: #ffffff;
-    color: #000000;
-    border: 2px solid #E29f31;
-    padding: 30px 100px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.calificacion-button:hover {
-    background-color: #e4c18a;
-}

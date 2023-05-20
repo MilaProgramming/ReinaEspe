@@ -21,7 +21,7 @@ const CalificacionPopup = ({ onClose }) => {
                 </button>
                 ))}
             </div>
-            <button onClick={onClose}>Aceptar</button>
+            <button className='botonAceptar' onClick={onClose}>Aceptar</button>
         </div>
     );
 };

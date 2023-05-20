@@ -2,6 +2,7 @@
 
 .calificacion-popup {
     position: fixed;
+    z-index: 2;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -20,18 +21,21 @@
     margin-top: 0;
 }
 
+.botonAceptar{
+    margin-top: 18px;
+    padding: 8px;
+}
+
 .calificacion-popup button {
     font-family: "Poppins";
-    margin-top: 10px;
     background-color: #ffffff;
     color: #090909;
     border: 2px solid #E29f31;
-    padding: 8px 16px;
     border-radius: 4px;
     cursor: pointer;
 }
 
-.calificacion-popup button:hover {
+.calificacion-popup button:hover {  
 background-color: #0056b3;
 }
 
@@ -48,8 +52,8 @@ background-color: #0056b3;
     height: 80px;
     border: none;
     border-radius: 100%;
-    background: linear-gradient(92.24deg, #EC1F7E -19.37%, #EE3B24 123.21%);
-    color: #fff;
+    background: linear-gradient(92.24deg, #E29f31 -19.37%, #E29f31 123.21%);
+    color: #090909;
     font-size: 30px;
     cursor: pointer;
     margin: 0 10px;
