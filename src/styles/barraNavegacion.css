@@ -1,0 +1,24 @@
+.barraNavegacion{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+}
+
+
+.barraNavegacion h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins";
+    background-color: #007429;
+    width: 100%;
+    height: 110px;
+    color: white;
+    font-weight: lighter;
+    font-size:auto;
+    padding: 0;
+    margin: 0;
+}

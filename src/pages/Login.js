@@ -1,4 +1,4 @@
-import "./Login.css";
+import "../styles/Login.css";
 import { FaUser, FaLock } from 'react-icons/fa';
 
 function Login() {
@@ -10,7 +10,7 @@ function Login() {
             <img
               className="logoespereina-icon"
               alt=""
-              src="/logoespereina.png"
+              src="../assets/logoespereina.png"
             />
           </div>
 
@@ -48,7 +48,7 @@ function Login() {
           <img
             className="siluetareina-icon"
             alt=""
-            src="/siluetareina.png"
+            src="../assets/siluetareina.png"
           />
       </div>
     </div>

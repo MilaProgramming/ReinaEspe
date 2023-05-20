@@ -1,10 +1,9 @@
 import React from 'react'
 import '../styles/Barra.css';
 import CalificationButton from '../components/CalificationButton';
-const imagen = require.context("../img/");
 const imagen2 = require.context("../assets/");
 const data = [
-    { id: 1, sede:"MATRIZ",departamento: "Dpto de Ciencias de la Computación", nombre: "Maria", foto:"./chica4.jpg" },
+    { id: 1, sede:"MATRIZ",departamento: "Dpto de Ciencias de la Computación", nombre: "Maria", foto:"../assets/chica4.jpg"},
     { id: 2, sede:"LTCGA",departamento: "Dpto de Ciencias Médicas", nombre: "Karelis",foto:"./chica7.jpg" },
     { id: 3, sede:"MATRIZ",departamento: "Dpto de Ciencias de la Energia y Mecánica", nombre: "Elizabeth",foto:"./chica2.jpg" },
     { id: 4, sede:"MATRIZ",departamento: "Dpto de Ciencias de la Tierra y Construcción", nombre: "Josselin",foto:"./chica7.jpg" },
