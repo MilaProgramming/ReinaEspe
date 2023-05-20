@@ -1,15 +1,87 @@
 
   .container_cont{
-    max-width: 1200px;
+    max-width: 200px;
     margin: auto;
     padding: 25px;
   }
-  
-  .circle-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  .contenedor-candidatas{
+    
+    
+    width: 520px;
   }
+  .contenedor-candidatas img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10000px;
+    margin-top: -50px;
+    margin-left: 300px;
+    z-index: 4;
+    
+    margin-bottom: 50px;
+  }
+  .botones-calificacion{
+    width: 400px;
+    text-align: center;
+    height: 150px;
+  }
+
+  .botones-calificacion button{
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    color: #ffffff;
+    background-color: green;
+    font-size: 30px;
+    font-family: fantasy;
+  }
+  .botones-calificacion button:hover{
+    background-color: rgb(54, 167, 54);
+    border: #8dac21 6px solid;
+    color: #ffffff;
+  }
+  .botones-calificacion button:visited{
+    background-color: rgb(54, 167, 54);
+    border: #8dac21 6px solid;
+    color: #ffffff;
+  }
+  
+
+  .green-round{
+  border: 1px solid #138f3c;
+  border-radius: 300px;
+  width: 300px;
+  height: 300px;
+  background-color: #138f3c;
+  color:#ffffff;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 20px;
+  z-index: 1;
+  }
+
+  .orange-round{
+
+    border: 1px solid orange;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    color:#ffffff;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    margin-top: -300px;
+    }
+
+    .filas{
+      display: grid;
+  grid-template-columns: auto auto;
+
+    }
+  
   
   .boton{
     margin-top: -250px;
@@ -18,7 +90,7 @@
   
   .barras{
     margin-top:45px;
-    height: 1000px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,21 +110,24 @@
   .barra h2
   {
     margin-top:200px;
-    right: 900px;
+    
     color: #007429;
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
   }
   
   .barra {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-top: -50px;
-    margin-left: -225px;
-  }
+    width: 1200px;
+    height: 300px;
   
+    text-align: right;
+    align-items: right;
+  }
+
+  .barra img{
+    width: 350px;
+    margin-top: 50px;
+  }
 
   .matriz{
     margin-top:-900px;
