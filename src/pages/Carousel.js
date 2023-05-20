@@ -146,14 +146,35 @@ export const Carousel=() => {
                 </button>
             </div>
             <div className='carousel-item-text'>
-            <div className="renglon"><h4>Nombre:</h4>&nbsp; {items[activeQueen].nombreCompleto}</div>
-            <div className="renglon"><h4>Fecha de Nacimiento:</h4> &nbsp;{items[activeQueen].fechaNacimiento}</div>
-            <div className="renglon"><h4>Estatura:</h4>&nbsp; {items[activeQueen].estatura}</div>
-            <div className="renglon"><h4>Descripción:</h4>{items[activeQueen].description}</div>
-            <div className="renglon"><h4>Idiomas:</h4>&nbsp; {items[activeQueen].idiomas}</div>
-            <div className="renglon"><h4>Color de ojos:</h4>&nbsp; {items[activeQueen].colorOjos}</div>
-            <div className="renglon"><h4>Color de cabello:</h4>&nbsp; {items[activeQueen].colorCabello}</div>
-        </div> {/* El indice debe ser parametrizado */}
+                <div className="renglon">
+                    <h4>Nombre:</h4>&nbsp;
+                    <span className='renglon_info'>{items[activeQueen].nombreCompleto}</span>
+                </div>
+                <div className="renglon">
+                    <h4>Fecha de Nacimiento:</h4> &nbsp;
+                    <span className='renglon_info'>{items[activeQueen].fechaNacimiento}</span>
+                </div>
+                <div className="renglon">
+                    <h4>Estatura:</h4>&nbsp;
+                    <span className='renglon_info'>{items[activeQueen].estatura}</span>
+                </div>
+                <div className="renglon">
+                    <h4>Descripción:</h4>
+                    <span className='renglon_info'>{items[activeQueen].description}</span>
+                </div>
+                <div className="renglon">
+                    <h4>Idiomas:</h4>&nbsp;
+                    <span className='renglon_info'>{items[activeQueen].idiomas}</span>
+                </div>
+                <div className="renglon">
+                    <h4>Color de ojos:</h4>&nbsp;
+                    <span className='renglon_info'>{items[activeQueen].colorOjos}</span>
+                </div>
+                <div className="renglon">
+                    <h4>Color de cabello:</h4>&nbsp;
+                    <span className='renglon_info'>{items[activeQueen].colorCabello}</span>
+                </div>
+            </div> {/* El indice debe ser parametrizado */}
         </div>
         <div className="boton-siguiente">
             {(activeQueen < items.length-1) &&(
