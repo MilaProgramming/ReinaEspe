@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../styles/Barra.css';
+
 import NavBar from '../components/NavBar';
 import CalificationButton from '../components/CalificationButton';
 const imagen2 = require.context("../assets/");
+
+
+
 //para probar datos
 const data = [
     { id: 1, sede:"MATRIZ",departamento: "Dpto de Ciencias de la Computación", nombre: "Maria", foto:"./chica7.jpg"},
@@ -13,15 +17,34 @@ const data = [
     { id: 6, sede:"MATRIZ", departamento: "Dpto de Ciencias Económicas, Administrativas", nombre: "Pamela",foto:"./chica7.jpg" },
     { id: 7, sede:"MATRIZ", departamento: "Dpto de Ciencias Humanas y Sociales", nombre: "Pamela",foto:"./chica7.jpg" },
     { id: 8, sede:"MATRIZ", departamento: "Dpto de Seguridad y Defensa", nombre: "FRANCISCA",foto:"./chica7.jpg" },
-    { id: 6, sede:"MATRIZ", departamento: "Dpto de Electrica, Electrónica y Teliecomunicaciones", nombre: "DANIELA",foto:"./chica7.jpg" },
+    { id: 6, sede:"MATRIZ", departamento: "Dpto de Electrica, Electrónica y Telcom", nombre: "DANIELA",foto:"./chica7.jpg" },
     { id: 6, sede:"MATRIZ", departamento: "Dpto de Ciencias Exactas", nombre: "VANESSA",foto:"./chica7.jpg" },
     { id: 6, sede:"MATRIZ", departamento: "Dpto de Ciencias ------------", nombre: "NAYELI",foto:"./chica7.jpg" },
 ];
 
 
 
-const Barra = () => (
+
+
+function Barra (){
+    useEffect(() => {
+        document.title = "Calificación de Barras"
+        
+    });
+    useEffect(() => {
+        let link = document.querySelector("link[rel~='icon']");
+        if (!link) {
+            link = document.createElement('link');
+            link.rel = 'icon';
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+        link.href = 'https://cliply.co/wp-content/uploads/2021/03/392103930_CROWN_EMOJI_STICKER_400.png';
+    }, []);
+
+
+    return(
    <> 
+   
    <NavBar texto="Calificación de Barras"/> {/*Cambio de texto de texto de header*/}
    <div className="container_cont">
         <div className="barras">
@@ -53,11 +76,12 @@ const Barra = () => (
     </div>
     <img src={imagen2(datos.foto)}></img>
     <div className='botones-calificacion'>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
+    <div><p>1</p></div>
+        <div><p>
+            2</p></div>
+        <div><p>3</p></div>
+        <div><p>4</p></div>
+        <div><p>5</p></div>
           </div>
         <input id="cal-barra" type='range' min="1" max="5" step="1"/>
         
@@ -68,7 +92,7 @@ const Barra = () => (
     )
         
     }</div></div>
-    </>
-);
+    </>)
+};
 
 export default Barra;
