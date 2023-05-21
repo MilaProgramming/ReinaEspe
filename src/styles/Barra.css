@@ -1,14 +1,16 @@
-
+@import url("https://fonts.googleapis.com/css?family=Roboto");
   .container_cont{
     max-width: 200px;
     margin: auto;
     padding: 25px;
+    font-family: "Roboto";
   }
   .contenedor-candidatas{
     
     text-align: center;
     width:400px;
     height: 400px;
+    font-family: "Roboto";
 
   }
   .contenedor-candidatas img{
@@ -42,29 +44,34 @@
     margin-left: 60px;
     display: grid;
     grid-template-columns: 39px 39px 39px 39px 39px 39px;
+    font-family: "Roboto";
 
   }
   .botones-calificacion div{
     border-radius: 40px;
     background-color: #007429;
     width: 38px;
+    height: 38px;
     font-size: 25px;
     color: #ffffff;
     font-weight: 900;
+    font-family: "Roboto";
   }
   .contenedor-candidatas button{
-    border-radius: 20px;
+    border-radius: 100px;
     background-color: #007429;
     color: #ffffff;
     font-size: 25px;
     width: 50px;
+    height: 50px;
     margin-left: 25px;
+    font-family: "Roboto";
   }
   .contenedor-candidatas button:hover{
     
     background-color: #09be48;
     font-size: 25px;
-
+    font-family: "Roboto";
   }
 
 
@@ -91,6 +98,9 @@
   
 .container-general{
   margin-left: 70px;
+  margin-top: -80px;
+  font-family: "Roboto";
+
 }
   .green-round{
   border: 1px solid #138f3c;
@@ -106,23 +116,21 @@
   margin-top: 10px;
   margin-left: 20px;
   z-index: 1;
+  font-family: "Roboto";
   
   }
   .green-round h4{
     font-style: italic;
-    margin-left: 30px;
+    margin-left: 50px;
     margin-right: 10px;
-    
-
+    font-family: "Roboto";
   }
    .green-round h5{
     margin-left: 10px;
-    margin-right: 10px;
-    
+    margin-right: 10px;  
     font-weight: 2000;
-    font-family: "Arial";
+    font-family: "Roboto";
     margin-top: 60px;
-
   }
 
   .orange-round{
@@ -139,9 +147,11 @@
     z-index: 3;
     margin-top: -230px;
     font-weight: bold;
+    font-family: "Roboto";
     }
     .orange-round p{
       margin-top: 30px;
+      font-family: "Roboto";
     }
 
 
@@ -150,7 +160,7 @@
     .filas{
       display: grid;
   grid-template-columns: auto auto auto;
-
+  font-family: "Roboto";
     }
   
   
@@ -180,7 +190,7 @@
   
   .barra h2
   {
-    margin-top:200px;
+    margin-top:150px;
     
     color: #007429;
     font-family: 'Roboto', sans-serif;
@@ -189,15 +199,16 @@
   
   .barra {
     width: 1200px;
-    height: 300px;
-    
+    height: 200px;
     text-align: right;
     align-items: right;
+
+
   }
 
   .barra img{
     width: 350px;
-    margin-top: 50px;
+    margin-top: 0px;
   }
 
 
