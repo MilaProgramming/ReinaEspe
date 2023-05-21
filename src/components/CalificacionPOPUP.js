@@ -3,10 +3,13 @@ import "../styles/calificacionpopup.css"
 
 const CalificacionPopup = ({ onClose }) => {
     const [selectedButton, setSelectedButton] = useState(null);
+    const [verificator, setVerificator] = useState(false);
 
     const handleButtonClick = (buttonIndex) => {
         setSelectedButton(buttonIndex);
+        setVerificator(true);
     };
+
 
     return (
         <div className="calificacion-popup">
@@ -20,6 +23,7 @@ const CalificacionPopup = ({ onClose }) => {
                     {index + 1}
                 </button>
                 ))}
+
             </div>
             <button className='botonAceptar' onClick={onClose}>Aceptar</button>
         </div>
