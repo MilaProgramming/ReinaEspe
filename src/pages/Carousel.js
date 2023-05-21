@@ -1,19 +1,15 @@
 import React, { useState } from 'react'
 import {CarouselItem} from "./CarouselItem.js"
 import "../styles/carrusel.css"
-import reina1 from "../assets/reina1.jpg"
-import reina2 from "../assets/reina1_2.jpg"
-import reina3 from "../assets/reina1_3.jpg"
-import reina4 from "../assets/reina2.jpg"
-import reina5 from "../assets/reina2_1.jpg"
-import reina6 from "../assets/reina2_2.jpg"
-import reina7 from "../assets/reina3.jpeg"
-import reina8 from "../assets/reina3_2.jpg"
-import reina9 from "../assets/reina3_3.jpg"
 
 export const Carousel=() => {
-    const [activeQueen,setActiveQueen] = useState(0);
-    const [activeIndex,setActiveIndex] = useState(0);
+    const [activeQueen,setActiveQueen] = useState(0);//Para seleccionar la reina que se muestra en determinado momento.
+    //Cambia con los botones de administrador.
+    const [activeIndex,setActiveIndex] = useState(0);//Para el carrusel de imágenes.
+
+    //En este arreglo pusimos datos quemados de las reinas. Llénenlo en su lugar de los datos de la
+    //bdd.
+
     const items = [
         {
             nombreCompleto:"Alejandra Gonzales",
@@ -24,13 +20,14 @@ export const Carousel=() => {
             colorCabello:"Negro",
             description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing Nam hendrerit nisl turpis, quis tempor urna tincidunt ut.",
-            
+          
+            //Este arreglo son las imágenes para cada reina. Dentro del require, recuperen el url de la bdd.
             icons: [
-                {ic: reina1
+                {ic: require("../assets/reina1.jpg")
                 },
-                {ic: reina2
+                {ic: require("../assets/reina1_2.jpg")
                 },
-                {ic: reina3
+                {ic: require("../assets/reina1_3.jpg")
                 }
             ]
         },
@@ -46,11 +43,11 @@ export const Carousel=() => {
             "Lorem ipsum dolor sit amet, consectetur adipiscing Nam hendrerit nisl turpis, quis tempor urna tincidunt ut.",
             
             icons: [
-                {ic: reina4
+                {ic: require("../assets/reina2.jpg")
                 },
-                {ic: reina5
+                {ic: require("../assets/reina2_1.jpg")
                 },
-                {ic: reina6
+                {ic: require("../assets/reina2_2.jpg")
                 }
             ]
            
@@ -66,11 +63,11 @@ export const Carousel=() => {
             description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing Nam hendrerit nisl turpis, quis tempor urna tincidunt ut.",
             icons:[
-                {ic: reina7
+                {ic: require("../assets/reina3.jpeg")
                 },
-                {ic: reina8
+                {ic: require("../assets/reina3_2.jpg")
                 },
-                {ic: reina9
+                {ic: require("../assets/reina3_3.jpg")
                 }
             ]
         },
@@ -146,14 +143,35 @@ export const Carousel=() => {
                 </button>
             </div>
             <div className='carousel-item-text'>
-            <div className="renglon"><h4>Nombre:</h4>&nbsp; {items[activeQueen].nombreCompleto}</div>
-            <div className="renglon"><h4>Fecha de Nacimiento:</h4> &nbsp;{items[activeQueen].fechaNacimiento}</div>
-            <div className="renglon"><h4>Estatura:</h4>&nbsp; {items[activeQueen].estatura}</div>
-            <div className="renglon"><h4>Descripción:</h4>{items[activeQueen].description}</div>
-            <div className="renglon"><h4>Idiomas:</h4>&nbsp; {items[activeQueen].idiomas}</div>
-            <div className="renglon"><h4>Color de ojos:</h4>&nbsp; {items[activeQueen].colorOjos}</div>
-            <div className="renglon"><h4>Color de cabello:</h4>&nbsp; {items[activeQueen].colorCabello}</div>
-        </div> {/* El indice debe ser parametrizado */}
+                <div className="renglon">
+                    <h4>Nombre:</h4>&nbsp;
+                    <span className='renglon_info'>{items[activeQueen].nombreCompleto}</span>
+                </div>
+                <div className="renglon">
+                    <h4>Fecha de Nacimiento:</h4> &nbsp;
+                    <span className='renglon_info'>{items[activeQueen].fechaNacimiento}</span>
+                </div>
+                <div className="renglon">
+                    <h4>Estatura:</h4>&nbsp;
+                    <span className='renglon_info'>{items[activeQueen].estatura}</span>
+                </div>
+                <div className="renglon">
+                    <h4>Descripción:</h4>
+                    <span className='renglon_info'>{items[activeQueen].description}</span>
+                </div>
+                <div className="renglon">
+                    <h4>Idiomas:</h4>&nbsp;
+                    <span className='renglon_info'>{items[activeQueen].idiomas}</span>
+                </div>
+                <div className="renglon">
+                    <h4>Color de ojos:</h4>&nbsp;
+                    <span className='renglon_info'>{items[activeQueen].colorOjos}</span>
+                </div>
+                <div className="renglon">
+                    <h4>Color de cabello:</h4>&nbsp;
+                    <span className='renglon_info'>{items[activeQueen].colorCabello}</span>
+                </div>
+            </div> {/* El indice debe ser parametrizado */}
         </div>
         <div className="boton-siguiente">
             {(activeQueen < items.length-1) &&(

@@ -6,7 +6,7 @@ export const CarouselItem=( {item}) => {
     <div className='carousel-item'>
         <div></div>
         <figure className='carousel-img'>
-          <img src={item.ic} alt = "imagen"/>
+          <img src={item.ic} alt = "imagen"/>{/*En el src, se deberá poner el enlace de la imagen almacenado en la bdd.*/}
         </figure>
     </div>
   );
