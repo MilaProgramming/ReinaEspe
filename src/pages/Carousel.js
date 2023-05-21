@@ -76,13 +76,14 @@ export const Carousel=() => {
         
 
     ];
+    //Esta función permite mover el carrusel hacia adelante o hacia atrás según el botón que se presione.
     const updateIndex = (newIndex) =>{
         if(newIndex < 0){
-            newIndex=items.length-1;
+            newIndex=items.length-1;//Muestra la última foto del carrusel si se presiona la flecha izquierda estando en la primera foto.
         }else if (newIndex > items.length-1){
-            newIndex = 0;
+            newIndex = 0; //Muestra la primera foto del carrusel si se presiona la flecha derecha estando en la última foto.
         }
-        setActiveIndex(newIndex);
+        setActiveIndex(newIndex); //Cambia activeIndex.
     };
   return (
     <div className="general">
@@ -91,8 +92,8 @@ export const Carousel=() => {
 
         <div className= "container">
             <div className="macrocarrusel">
-                <button onClick={()=>{
-                    updateIndex(activeIndex - 1);
+                <button onClick={()=>{//Este botón retrocede en el carrusel.
+                    updateIndex(activeIndex - 1); 
                     }} className='button-arrow'>
                         <span className="material-symbols-outlined">
                             arrow_back_ios
@@ -104,12 +105,14 @@ export const Carousel=() => {
                         style={{transform: `translate(-${activeIndex * 100}%)`}}
                     >    
                     {items[activeQueen].icons.map((item)=>{ /* El indice debe ser parametrizado */
+                        //Crea instancias de CarruselItem enviándole las fotos de la reina actual para que aparezcan dentro del carrusel.
                         return  <CarouselItem item={item} width={"100%"}/>;
                     })}
                     </div>
                     <div className = "carousel-buttons">
                         <div className='indicators'>
                             {items.map((item,index)=>{
+                                //Indica en qué posición del carrusel se encuentra el usuario. También permiten cambiar la posición al hacer click.
                                 return (
                                     <button 
                                             className="indicator-buttons"
@@ -138,7 +141,7 @@ export const Carousel=() => {
                 </div>
                 <button 
                     className='button-arrow'
-                    onClick={() => {
+                    onClick={() => {//Avanza en el carrusel.
                     updateIndex(activeIndex + 1);
                     }}
                 >
@@ -147,6 +150,7 @@ export const Carousel=() => {
                     </span>
                 </button>
             </div>
+            {/*Se muestra la información de la reina.*/}
             <div className='carousel-item-text'>
                 <div className="renglon">
                     <h4>Nombre:</h4>&nbsp;
@@ -179,13 +183,15 @@ export const Carousel=() => {
             </div> {/* El indice debe ser parametrizado */}
         </div>
         <div className="boton-siguiente">
-            {(activeQueen < items.length-1) &&(
-                <button onClick={() => {setActiveQueen(activeQueen+1)}}>Siguiente</button>
-            )}
+            {/*Con estos botones es posible cambiar entre las diferentes candidatas registradas y ver su información.
+            Como los administradores son los encargados de gestionar lo que aparece en la página durante las diferentes etapas del 
+            evento, estos botones deberían configurarse para que solo usuarios administradores puedan verlos.*/}
             {(activeQueen > 0) &&(
                 <button onClick={() => {setActiveQueen(activeQueen-1)}}>Anterior</button>
             )}
-            
+            {(activeQueen < items.length-1) &&(
+                <button onClick={() => {setActiveQueen(activeQueen+1)}}>Siguiente</button>
+            )}
         </div>
     </div>
   )
