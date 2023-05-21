@@ -3,6 +3,7 @@ import ImagenOvalo from '../components/ImagenOvalo';
 import CalificationButton from '../components/CalificationButton';
 import "../styles/Traje.css"
 
+
 function Traje() {
 
     useEffect(() => {

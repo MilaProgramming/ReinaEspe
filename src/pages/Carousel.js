@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import {CarouselItem} from "./CarouselItem.js"
 import "../styles/carrusel.css"
+import NavBar from "../components/NavBar.js"
 
 export const Carousel=() => {
+
     const [activeQueen,setActiveQueen] = useState(0);//Para seleccionar la reina que se muestra en determinado momento.
     //Cambia con los botones de administrador.
     const [activeIndex,setActiveIndex] = useState(0);//Para el carrusel de imágenes.
@@ -84,6 +86,9 @@ export const Carousel=() => {
     };
   return (
     <div className="general">
+
+        <NavBar texto="Elección Reina"/> {/*Cambio de texto de texto de header*/}
+
         <div className= "container">
             <div className="macrocarrusel">
                 <button onClick={()=>{
@@ -109,7 +114,7 @@ export const Carousel=() => {
                                     <button 
                                             className="indicator-buttons"
                                             onClick={() => {
-                                                updateIndex(index);
+                                                updateIndex(index); 
                                             }}
                                         >
                                         

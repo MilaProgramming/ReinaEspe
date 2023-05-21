@@ -4,14 +4,12 @@ import Traje from "./pages/Traje";
 import Barra from "./pages/Barra";
 import Login from "./pages/Login"
 import Preguntas from "./pages/preguntas/Preguntas.js"
-import NavBar from "./components/NavBar"
+
 
 
 function App() {
   return (
     <div className="App">
-
-      <NavBar texto="Elección Reina"/>
       
       <Router>
         <Routes>
