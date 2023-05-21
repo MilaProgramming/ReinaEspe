@@ -15,12 +15,12 @@ function Traje() {
     useEffect(() => {
         let link = document.querySelector("link[rel~='icon']");
         if (!link) {
-          link = document.createElement('link');
-          link.rel = 'icon';
-          document.getElementsByTagName('head')[0].appendChild(link);
+            link = document.createElement('link');
+            link.rel = 'icon';
+            document.getElementsByTagName('head')[0].appendChild(link);
         }
         link.href = 'https://cliply.co/wp-content/uploads/2021/03/392103930_CROWN_EMOJI_STICKER_400.png';
-      }, []);
+    }, []);
 
     return (
 
