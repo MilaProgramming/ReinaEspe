@@ -176,9 +176,6 @@ input[type=range]::-webkit-slider-thumb {
       font-family: "Roboto";
     }
 
-
-    
-
     .filas{
       display: grid;
   grid-template-columns: auto auto auto;
@@ -224,16 +221,9 @@ input[type=range]::-webkit-slider-thumb {
     height: 200px;
     text-align: right;
     align-items: right;
-
-
   }
 
   .barra img{
     width: 350px;
     margin-top: 0px;
   }
-
-
-  
-
-
