@@ -23,9 +23,48 @@
     
     margin-bottom: 50px;
   }
+
+  input[type='range']::-webkit-slider-runnable-track, 
+input[type='range']::-webkit-slider-thumb{
+         -webkit-appearance: none;
+}
+input[type=range]:focus {
+  outline: none; /*Elimina el borde azul. Se debería dar estilo de enfoque por razones de accesibilidad */
+}
+input[type='range']
+ {-webkit-appearance: none;
+ background: transparent;/* quitamos estilos es moz y webkit lo ponemios transparente */
+ width: 100%; /* En firefox es requerido poner el ancho */
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  /* Oculta el control deslizante para agregar estilos personalizados */
+  background: transparent; 
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #bf930d;
+  cursor: pointer;
+  margin-top: -14px; /* hay que darle valor negativo, solo a este navegador */
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; 
+}
+
+
+
   .contenedor-candidatas input{
     width: 200px;
     margin-top: 10px;
+    background: #007429;
+    color: #007429 ;
   }
 
   .contenedor-candidatas input{
@@ -135,11 +174,11 @@
 
   .orange-round{
 
-    border: 1px solid orange;
+    border: 1px solid #bf930d;
     border-radius: 100px;
     width: 80px;
     height: 80px;
-    background-color: orange;
+    background-color: #bf930d;
     color:#ffffff;
     font-size: 20px;
     justify-content: center;
