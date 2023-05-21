@@ -8,7 +8,8 @@
     
     text-align: center;
     width:400px;
-    height: max-content;
+    height: 400px;
+
   }
   .contenedor-candidatas img{
     width: 150px;
@@ -38,9 +39,9 @@
     text-align: center;
     height: auto;
     align-content: center;
-    margin-left: 50px;
+    margin-left: 60px;
     display: grid;
-    grid-template-columns: 38px 38px 38px 38px 38px 38px;
+    grid-template-columns: 39px 39px 39px 39px 39px 39px;
 
   }
   .botones-calificacion div{
@@ -88,7 +89,9 @@
     color: #ffffff;
   }*/
   
-
+.container-general{
+  margin-left: 70px;
+}
   .green-round{
   border: 1px solid #138f3c;
   border-radius: 300px;
@@ -118,7 +121,7 @@
     
     font-weight: 2000;
     font-family: "Arial";
-
+    margin-top: 60px;
 
   }
 
@@ -137,6 +140,10 @@
     margin-top: -230px;
     font-weight: bold;
     }
+    .orange-round p{
+      margin-top: 30px;
+    }
+
 
     
 
