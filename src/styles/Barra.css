@@ -82,17 +82,17 @@ input[type=range]::-webkit-slider-thumb {
     align-content: center;
     margin-left: 60px;
     display: grid;
-    grid-template-columns: 39px 39px 39px 39px 39px 39px;
+    grid-template-columns: 43px 43px 43px 43px 43px 43px;
     font-family: "Roboto";
 
   }
   .botones-calificacion div{
     border-radius: 40px;
     background-color: #007429;
-    width: 38px;
-    height: 38px;
+    width: 40px;
+    height: 40px;
     top: 25px;
-    font-size: 15px;
+    font-size: 16px;
     color: #ffffff;
     font-weight: 900;
     font-family: "Roboto";
