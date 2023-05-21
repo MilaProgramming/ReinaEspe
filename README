@@ -4,5 +4,6 @@ Tercero, no borren esto, acá ponemos las librerias que instalen
 
 ---------------------------
 
+npm install react-router-dom
 npm install react-icons
 npm install react-modal
