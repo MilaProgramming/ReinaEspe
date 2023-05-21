@@ -38,7 +38,7 @@
 }
 
 .calificacion-popup button:hover {  
-background-color: #e4c18a;
+    background: linear-gradient(92.24deg, #0ba13f -19.37%, #2f9c61 123.21%);
 }
 
 .botones-calificacionTraje {
@@ -54,7 +54,7 @@ background-color: #e4c18a;
     height: 80px;
     border: none;
     border-radius: 100%;
-    background: linear-gradient(92.24deg, #E29f31 -19.37%, #E29f31 123.21%);
+    background: linear-gradient(102.13deg, #EFB810 28.36%, rgba(228, 240, 91, 0.83) 99.2%);
     color: #090909;
     font-size: 30px;
     cursor: pointer;
