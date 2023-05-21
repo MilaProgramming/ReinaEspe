@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import ImagenOvalo from '../components/ImagenOvalo';
 import CalificationButton from '../components/CalificationButton';
 import "../styles/Traje.css"
+import NavBar from "../components/NavBar.js"
 
 
 function Traje() {
@@ -22,16 +23,23 @@ function Traje() {
       }, []);
 
     return (
-        <div className='trajes'>
-            <div className='imagenTraje'>
-                <ImagenOvalo dir = {require("../assets/pedro.jpg")}/>
-            </div>
 
-            <div className='botonTraje'>
-                <CalificationButton/>
-            </div>
+        <div>
+                <NavBar texto="Ronda de trajes"/> {/*Cambio de texto de texto de header*/}
 
+                <div className='trajes'>
+
+                <div className='imagenTraje'>
+                    <ImagenOvalo dir = {require("../assets/pedro.jpg")}/>
+                </div>
+
+                <div className='botonTraje'>
+                    <CalificationButton/>
+                </div>
+
+                </div>
         </div>
+
     )
 }
 
