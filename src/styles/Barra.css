@@ -117,28 +117,6 @@ input[type=range]::-webkit-slider-thumb {
     font-size: 25px;
     font-family: "Roboto";
   }
-
-
-  /*.botones-calificacion button{
-    width: 40px;
-    height: 40px;
-    border-radius: 70px;
-    color: #ffffff;
-    background-color: rgb(5, 65, 5);
-    font-size: 25px;
-    font-family: fantasy;
-    margin-left: 20px;
-  }
-  .botones-calificacion button:hover{
-    background-color: rgb(54, 167, 54);
-    border: #8dac21 6px solid;
-    color: #ffffff;
-  }
-  .botones-calificacion button:visited{
-    background-color: rgb(54, 167, 54);
-    border: #8dac21 6px solid;
-    color: #ffffff;
-  }*/
   
 .container-general{
   margin-left: 70px;
