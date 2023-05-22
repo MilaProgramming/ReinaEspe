@@ -2,8 +2,7 @@ import { useState } from "react";
 import { useEffect } from 'react';
 import  React from 'react';
 import axios from "axios";
-import "./Login.css";
-import App from "../App";
+import "../styles/Login.css";
 import { FaUser, FaLock } from 'react-icons/fa';
 
 function Login() {
@@ -41,9 +40,9 @@ function Login() {
         <div className="loginContainer">
           <div className="frmpantnegra">
             <img
-              className="logoespereina-icon"
-              alt=""
-              src="/logoespereina.png"
+                className="logoespereina-icon"
+                alt=""
+                src= {require("../assets/logoespereina.png")}
             />
           </div>
 

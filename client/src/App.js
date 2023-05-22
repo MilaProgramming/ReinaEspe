@@ -1,4 +1,3 @@
-import './App.css';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Menu from "./pages/Menu";
 import Carousel from "./pages/Carousel"
