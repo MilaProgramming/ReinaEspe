@@ -18,7 +18,7 @@ function App() {
           <Route path="/traje" element={<Traje />} />
             {/* <Route path='/ronda_preguntas' element={<Preguntas/>}/> */}
           <Route path="/barra" element={<Barra/>} />
-        </Routes>    
+        </Routes>     
       </Router>
     </div>
   );
