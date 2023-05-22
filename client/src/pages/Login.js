@@ -26,7 +26,7 @@ function Login() {
   const validar = () => {
       const encontrado = lista.find((val) => val.USUARIO_USERNAME === usuario && val.USUARIO_CONTRASENA === clave);
       if(encontrado){
-        window.location.href = './Carousel';
+        window.location.href = './Carrusel';
           alert("Bienvenido " + encontrado.USUARIO_NOMBRE);
          
       }else{
