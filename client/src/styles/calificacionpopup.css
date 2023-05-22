@@ -2,6 +2,7 @@
 
 .calificacion-popup {
     position: fixed;
+    z-index: 2;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -20,25 +21,30 @@
     margin-top: 0;
 }
 
+.botonAceptar{
+    margin-top: 18px;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .calificacion-popup button {
     font-family: "Poppins";
-    margin-top: 10px;
     background-color: #ffffff;
     color: #090909;
-    border: 2px solid #E29f31;
-    padding: 8px 16px;
+    border: 2px solid #090909;
     border-radius: 4px;
     cursor: pointer;
 }
 
-.calificacion-popup button:hover {
-background-color: #0056b3;
+.calificacion-popup button:hover {  
+    background: linear-gradient(92.24deg, #0ba13f -19.37%, #2f9c61 123.21%);
 }
 
-.botones-calificacion {
+.botones-calificacionTraje {
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* Dos filas con cinco columnas cada una */
-    gap: 20px 10px; /* Espacio entre los botones */
+    gap: 20px; /* Espacio entre los botones */
     justify-items: center; /* Centrar horizontalmente los botones en cada celda */
     margin-top: 20px;
 }
@@ -48,8 +54,8 @@ background-color: #0056b3;
     height: 80px;
     border: none;
     border-radius: 100%;
-    background: linear-gradient(92.24deg, #EC1F7E -19.37%, #EE3B24 123.21%);
-    color: #fff;
+    background: linear-gradient(102.13deg, #EFB810 28.36%, rgba(228, 240, 91, 0.83) 99.2%);
+    color: #090909;
     font-size: 30px;
     cursor: pointer;
     margin: 0 10px;

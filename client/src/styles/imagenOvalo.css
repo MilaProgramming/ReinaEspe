@@ -1,4 +1,4 @@
-*{
+.imagen >{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -10,8 +10,6 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-right: 50vh;
-    /* background-color: #252d5d; */
 }
 
 .imagen img{

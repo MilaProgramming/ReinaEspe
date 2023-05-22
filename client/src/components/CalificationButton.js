@@ -2,24 +2,30 @@ import React, { useState } from 'react';
 import CalificacionPopup from './CalificacionPOPUP';
 import "../styles/calificationbutton.css";
 
-const CalificacionButton = (props) => {
-    //console.log(props.idReina);
+const CalificacionButton = () => {
     const [mostrarPopup, setMostrarPopup] = useState(false);
+    const [contentB, setContentB] = useState("Calificar");
 
     const abrirPopup = () => {
-    setMostrarPopup(true);
+        setMostrarPopup(true);
     };
 
+    const cambiarBoton = () => {
+        setContentB("Re-Calificar");
+    }
+        
+
+
     const cerrarPopup = () => {
-    setMostrarPopup(false);
+        setMostrarPopup(false);
     };
 
     return (
         <div className='calificacion-container'>
             <button className='calificacion-button' onClick={abrirPopup}>
-                <span>Calificar</span>
+                <span>{contentB}</span>
                 </button>
-            {mostrarPopup && <CalificacionPopup onClose={cerrarPopup} idReina={props.idReina} />}
+            {mostrarPopup && <CalificacionPopup onClose={() => {cerrarPopup(); cambiarBoton()}} />}
         </div>
     );
 };
