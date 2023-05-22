@@ -16,7 +16,7 @@ function App() {
           <Route index element={<Login/>} />
           <Route path="/carrusel" element={<Carousel />} />
           <Route path="/traje" element={<Traje />} />
-          <Route path='/ronda_preguntas' element={<Preguntas/>}/>
+            {/* <Route path='/ronda_preguntas' element={<Preguntas/>}/> */}
           <Route path="/barra" element={<Barra/>} />
         </Routes>    
       </Router>
