@@ -39,6 +39,14 @@ app.get('/api/getReinas', (req, res) => {
         res.send(result)
     })
 })
+app.get('/api/getReinasBarra', (req, res) => {
+    const sqlSelect = "SELECT candidata.CAND_NOMBRE1, foto_candidata.FOTO_URL from candidata JOIN foto_candidata WHERE candidata.CANDIDATA_ID = foto_candidata.CANDIDATA_ID"
+    db.query(sqlSelect, (err, result) => {
+        if (err) console.log(err);
+        console.log(result);
+        res.send(result)
+    })
+})
 
 
 
