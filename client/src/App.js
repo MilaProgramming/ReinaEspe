@@ -12,9 +12,7 @@ import Preguntas from "./pages/preguntas/Preguntas.js"
 function App() {
   return (
     <div className="App">
-      <header>
-        <h1>Elección de la Reina</h1>
-      </header>
+
       <Router>
         <Routes>
           <Route index element={<Login />} />
