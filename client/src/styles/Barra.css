@@ -1,187 +1,15 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+
   .container_cont{
-    max-width: 200px;
+    max-width: 1200px;
     margin: auto;
     padding: 25px;
-    font-family: "Roboto";
-  }
-  .contenedor-candidatas{
-    
-    text-align: center;
-    width:400px;
-    height: 400px;
-    font-family: "Roboto";
-
-  }
-  .contenedor-candidatas img{
-    width: 150px;
-    height: 150px;
-    border-radius: 10000px;
-    margin-top: -25px;
-    margin-left: 190px;
-    z-index: 4;
-    
-    margin-bottom: 50px;
-  }
-
-  input[type='range']::-webkit-slider-runnable-track, 
-input[type='range']::-webkit-slider-thumb{
-         -webkit-appearance: none;
-}
-input[type=range]:focus {
-  outline: none; /*Elimina el borde azul. Se debería dar estilo de enfoque por razones de accesibilidad */
-}
-input[type='range']
- {-webkit-appearance: none;
- background: transparent;/* quitamos estilos es moz y webkit lo ponemios transparente */
- width: 100%; /* En firefox es requerido poner el ancho */
-}
-input[type=range]::-ms-track {
-  width: 100%;
-  cursor: pointer;
-
-  /* Oculta el control deslizante para agregar estilos personalizados */
-  background: transparent; 
-  border-color: transparent;
-  color: transparent;
-}
-
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  border: 1px solid #000000;
-  height: 36px;
-  width: 16px;
-  border-radius: 3px;
-  background: #bf930d;
-  cursor: pointer;
-  margin-top: -14px; /* hay que darle valor negativo, solo a este navegador */
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; 
-}
-
-
-
-  .contenedor-candidatas input{
-    width: 200px;
-    margin-top: 10px;
-    background: #007429;
-    color: #007429 ;
-  }
-
-  .contenedor-candidatas input{
-    background-color: #138f3c;
-    color: #138f3c;
-    height: 10px;
-    margin-bottom: 30px;
-
-  }
-
-  .botones-calificacion{
-    width: 100px;
-    text-align: center;
-    height: auto;
-    align-content: center;
-    margin-left: 60px;
-    display: grid;
-    grid-template-columns: 43px 43px 43px 43px 43px 43px;
-    font-family: "Roboto";
-
-  }
-  .botones-calificacion div{
-    border-radius: 40px;
-    background-color: #007429;
-    width: 40px;
-    height: 40px;
-    top: 25px;
-    font-size: 16px;
-    color: #ffffff;
-    font-weight: 900;
-    font-family: "Roboto";
-    
-  }
-  .botones-calificacion p{
-    margin-top: 10px;
-  }
-  .contenedor-candidatas button{
-    border-radius: 100px;
-    background-color: #007429;
-    color: #ffffff;
-    font-size: 25px;
-    width: 50px;
-    height: 50px;
-    margin-left: 25px;
-    font-family: "Roboto";
-  }
-  .contenedor-candidatas button:hover{
-    
-    background-color: #09be48;
-    font-size: 25px;
-    font-family: "Roboto";
   }
   
-.container-general{
-  margin-left: 70px;
-  margin-top: -80px;
-  font-family: "Roboto";
-
-}
-  .green-round{
-  border: 1px solid #138f3c;
-  border-radius: 300px;
-  width: 210px;
-  height: 210px;
-  background-color: #138f3c;
-  color:#ffffff;
-  font-size: 20px;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-  margin-top: 10px;
-  margin-left: 20px;
-  z-index: 1;
-  font-family: "Roboto";
-  
+  .circle-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
-  .green-round h4{
-    font-style: italic;
-    margin-left: 50px;
-    margin-right: 10px;
-    font-family: "Roboto";
-  }
-   .green-round h5{
-    margin-left: 20px;
-    margin-right: 20px;  
-    font-weight: 2000;
-    font-family: "Roboto";
-    margin-top: 60px;
-  }
-
-  .orange-round{
-
-    border: 1px solid #bf930d;
-    border-radius: 100px;
-    width: 80px;
-    height: 80px;
-    background-color: #bf930d;
-    color:#ffffff;
-    font-size: 20px;
-    justify-content: center;
-    align-items: center;
-    z-index: 3;
-    margin-top: -230px;
-    font-weight: bold;
-    font-family: "Roboto";
-    }
-    .orange-round p{
-      margin-top: 30px;
-      font-family: "Roboto";
-    }
-
-    .filas{
-      display: grid;
-  grid-template-columns: auto auto auto;
-  font-family: "Roboto";
-    }
-  
   
   .boton{
     margin-top: -250px;
@@ -190,7 +18,7 @@ input[type=range]::-webkit-slider-thumb {
   
   .barras{
     margin-top:45px;
-    height: 200px;
+    height: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -209,21 +37,161 @@ input[type=range]::-webkit-slider-thumb {
   
   .barra h2
   {
-    margin-top:150px;
-    
+    margin-top:200px;
+    right: 900px;
     color: #007429;
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
   }
   
   .barra {
-    width: 1200px;
+    width: 200px;
     height: 200px;
-    text-align: right;
-    align-items: right;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -50px;
+    margin-left: -225px;
+  }
+  
+
+  .matriz{
+    margin-top:-900px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .matriz h2
+  {
+    position: absolute;
+    top: 100;
+    margin-top: 225px;
+    padding: 10px;
+    font-size: 25px;
+    margin-left: -850px;
+  }
+  
+  .sangolqui h2
+  {
+    margin-top:50px;
+    right: 1100px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    width: 13%; /* Ajusta el ancho según tus necesidades */
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+  
+  .sangolqui {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -50px;
+    margin-left: -225px;
   }
 
-  .barra img{
-    width: 350px;
-    margin-top: 0px;
+
+
+  .circleGreen {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 200px;
+    margin-left: -600px;
   }
+  
+  .circleOrange {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -300px;
+    margin-left: -850px;
+  }
+  
+  .latacunga{
+    margin-top:60px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .latacunga h2
+  {
+    position: absolute;
+    margin-top: -370px;
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 400px;
+  }
+  
+  .lata h2
+  {
+    display: flex;
+    margin-top:45px;
+    right: 500px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    width: 200px; /* Ajusta el ancho según tus necesidades */
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+  
+  .lata {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -50px;
+    margin-left: 950px;
+  }
+  
+  .circleGreenLatacunga {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -400px;
+    margin-left: 600px;
+  }
+  
+  .circleOrangeLatacguna {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -300px;
+    margin-left: 400px;
+  }
+
+
+  .calificacion-container {
+    display: flex;
+    padding-left: 70vh;
+    margin-top: -20vh;
+}
+
+.calificacion-button {
+    font-family: "Poppins";
+    font-size: x-large;
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #E29f31;
+    padding: 30px 100px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.calificacion-button:hover {
+    background-color: #e4c18a;
+}

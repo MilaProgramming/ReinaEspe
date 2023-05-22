@@ -1,74 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-.calificacion-container {
-    display: flex;
 
-    position: relative;
-	width: 303px;
-	height: 100px;
-	border-radius: 8px;
-	overflow: hidden;
-}
 
 .calificacion-button {
     font-family: "Poppins";
+    position: relative;
     font-size: x-large;
-    background: #ffffff;
-    color: #000000;
-    padding: 30px;
-	text-align: center;
+    background-color: #ffffff;
+    color: #090909;
+    border: 2px solid #E29f31;
+    padding: 50px 300px;
     border-radius: 4px;
     cursor: pointer;
-    position: absolute;
-	inset: 2px;
-	z-index: 2;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.calificacion-container::before 
-{
-	content: '';
-	z-index: 1;
-	position: absolute;
-	top: -50%;
-	left: -50%;
-	width: 303px;
-	height: 100px;
-	transform-origin: bottom right;
-	background: linear-gradient(0deg,transparent,#E29f31,#E29f31);
-	animation: animate 6s linear infinite;
-}
-
-.calificacion-container::after 
-{
-	content: '';
-	z-index: 1;
-	position: absolute;
-	top: -50%;
-    left: -50%;
-	width: 303px;
-	height: 100px;
-	transform-origin: bottom right;
-	background: linear-gradient(0deg,transparent,#007429,#007429);
-	animation: animate 6s linear infinite;
-	animation-delay: -3s;
-}
-
-@keyframes animate 
-{
-	0%
-	{
-		transform: rotate(0deg);
-	}
-	100%
-	{
-		transform: rotate(360deg);
-	}
 }
 
 .calificacion-button:hover {
-	background-color: #e4c18a;
+    background-color: #e4c18a;
 }
