@@ -6,7 +6,7 @@ const imagen2 = require.context("../assets/");
 
 
 
-const imagen = require.context("../img/");
+// const imagen = require.context("../img/");
 
 
 //para probar datos
