@@ -2,73 +2,55 @@
 
 .calificacion-container {
     display: flex;
-
+	flex-direction: column;
     position: relative;
 	width: 303px;
-	height: 100px;
-	border-radius: 8px;
+	height: 210px;
 	overflow: hidden;
 }
 
-.calificacion-button {
+.calificacion-container .calificacion-button {
     font-family: "Poppins";
     font-size: x-large;
     background: #ffffff;
     color: #000000;
     padding: 30px;
 	text-align: center;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
-    position: absolute;
-	inset: 2px;
-	z-index: 2;
+    margin: 2px;
+	z-index: 1;
 	display: flex;
-	flex-direction: column;
+	flex-direction: column;	
 	justify-content: center;
 	align-items: center;
+	position: relative;
+	overflow: hidden;
 }
 
-.calificacion-container::before 
-{
-	content: '';
+.calificacion-container .boton-envio {
+    font-family: "Poppins";
+    font-size: medium;
+    background: #ffffff;
+    color: #000000;
+    padding: 15px;
+	text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 30px 2px;
 	z-index: 1;
-	position: absolute;
-	top: -50%;
-	left: -50%;
-	width: 303px;
-	height: 100px;
-	transform-origin: bottom right;
-	background: linear-gradient(0deg,transparent,#E29f31,#E29f31);
-	animation: animate 6s linear infinite;
-}
-
-.calificacion-container::after 
-{
-	content: '';
-	z-index: 1;
-	position: absolute;
-	top: -50%;
-    left: -50%;
-	width: 303px;
-	height: 100px;
-	transform-origin: bottom right;
-	background: linear-gradient(0deg,transparent,#007429,#007429);
-	animation: animate 6s linear infinite;
-	animation-delay: -3s;
-}
-
-@keyframes animate 
-{
-	0%
-	{
-		transform: rotate(0deg);
-	}
-	100%
-	{
-		transform: rotate(360deg);
-	}
+	display: flex;
+	flex-direction: column;	
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
 }
 
 .calificacion-button:hover {
+	background-color: #e4c18a;
+}
+
+.boton-envio:hover {
 	background-color: #e4c18a;
 }
